@@ -9,6 +9,11 @@ App::uses('View', 'View');
 class HamlView extends View {
 
 /**
+ * View files extension
+ */
+  public static $extension = 'haml';
+
+/**
  * Where the rendered CTP files will be stored
  */
   protected $_cacheFolder = 'views';
@@ -17,9 +22,11 @@ class HamlView extends View {
  * Constructor
  */
   public function __construct(Controller $controller = null) {
-    parent::__construct($controller);
-
     $this->Haml = new MtHaml\Environment('php', array('enable_escaper' => false));
+
+    $controller->ext = '.' . self::$extension;
+
+    return parent::__construct($controller);
   }
 
 /**
@@ -75,6 +82,12 @@ class HamlView extends View {
  * @return string The output
  */
   protected function _evaluate($viewFile, $dataForView) {
+    $file = new File($viewFile);
+
+    if ($file->ext() != self::$extension) {
+      return parent::_evaluate($viewFile, $dataForView);
+    }
+
     $file = $this->_createRenderedView($viewFile);
 
     $content = parent::_evaluate($file, $dataForView);
