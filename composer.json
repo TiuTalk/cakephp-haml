@@ -1,10 +1,9 @@
 {
-    "name": "tiutalk/cakephp-haml",
+    "name": "tiutalk/haml",
     "type": "cakephp-plugin",
     "description": "CakePHP HAML template engine",
     "keywords": ["cakephp","haml"],
     "license": "WTFPL",
-    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Thiago Belem",
