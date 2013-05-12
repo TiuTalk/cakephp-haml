@@ -1,3 +1,0 @@
-[submodule "Vendor/MtHaml"]
-	path = Vendor/MtHaml
-	url = git://github.com/arnaud-lb/MtHaml.git
