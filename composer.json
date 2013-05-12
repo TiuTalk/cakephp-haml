@@ -13,6 +13,6 @@
     ],
     "require": {
         "composer/installers": "*",
-        "mthaml/mthaml": "dev-master"
+        "mthaml/mthaml": "*"
     }
 }
