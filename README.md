@@ -37,7 +37,7 @@ class AppController extends Controller {
 }
 ```
 
-And now you can use HAML on all your view files, there's no need to change the file extension.
+And now you can use HAML on all your view files with `.haml` extension.
 
 ### Examples
 
