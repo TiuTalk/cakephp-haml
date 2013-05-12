@@ -4,7 +4,17 @@
 
 Based on the [MtHaml](https://github.com/arnaud-lb/MtHaml), a HAML implementation for PHP.
 
-## Installation
+## Installation (via Composer)
+
+Include the plugin on your composer file:
+
+```json
+"require": {
+  "tiutalk/cakephp-haml": "dev-master"
+}
+```
+
+## Installation (via Git)
 
 Use this plugin as a submodule:
 
@@ -17,7 +27,9 @@ Or as a normal repository:
 
 ```git clone git@github.com:TiuTalk/cakephp-haml.git Plugin/Haml --recursive```
 
-And enable it on the `APP/Config/bootstrap.php` file:
+### Configuration
+
+Enable it on the `APP/Config/bootstrap.php` file:
 
 ```php
 <?php

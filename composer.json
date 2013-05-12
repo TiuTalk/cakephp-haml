@@ -11,6 +11,7 @@
         }
     ],
     "require": {
-        "composer/installers": "*"
+        "composer/installers": "*",
+        "mthaml/mthaml": "dev-master"
     }
 }
