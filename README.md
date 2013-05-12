@@ -4,21 +4,6 @@
 
 Based on the [MtHaml](https://github.com/arnaud-lb/MtHaml), a HAML implementation for PHP.
 
-## Installation
-
-Use this plugin as a submodule:
-
-```shell
-git submodule add git@github.com:TiuTalk/cakephp-haml.git Plugin/Haml
-git submodule update --init --recursive
-```
-
-Or as a normal repository:
-
-```shell
-git clone git@github.com:TiuTalk/cakephp-haml.git Plugin/Haml --recursive
-```
-
 ### Configuration
 
 Enable it on the `APP/Config/bootstrap.php` file:
