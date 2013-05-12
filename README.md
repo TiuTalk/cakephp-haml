@@ -1,15 +1,28 @@
-# CakePHP HAML views
+# CakePHP HAML views class
 
 [HAML](http://haml.info/) template engine for **CakePHP 2.x**.
 
 Based on the [MtHaml](https://github.com/arnaud-lb/MtHaml), a HAML implementation for PHP.
 
-### Configuration
 
-Enable it on the `APP/Config/bootstrap.php` file:
+## Installation
+
+Include the plugin on your composer file:
+
+```json
+{
+  "require": {
+    "tiutalk/haml": "dev-master"
+  }
+}
+```
+
+This package has a **Composer** dependency, don't forget to require `autoload.php` and then enable it on the `APP/Config/bootstrap.php` file:
 
 ```php
 <?php
+require_once APP . 'Vendor' . DS . 'autoload.php';
+
 CakePlugin::load('Haml', array('bootstrap' => true));
 ```
 
