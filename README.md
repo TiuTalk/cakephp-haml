@@ -4,16 +4,6 @@
 
 Based on the [MtHaml](https://github.com/arnaud-lb/MtHaml), a HAML implementation for PHP.
 
-## Installation (via Composer)
-
-Include the plugin on your composer file:
-
-```json
-"require": {
-  "tiutalk/cakephp-haml": "dev-master"
-}
-```
-
 ## Installation (via Git)
 
 Use this plugin as a submodule:
