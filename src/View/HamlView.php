@@ -88,7 +88,7 @@ class HamlView extends View {
   protected function _evaluate($viewFile, $dataForView) {
     $file = new File($viewFile);
 
-    if ($file->ext() != $this->__extension) {
+    if ($file->ext() != $this->__extensionName) {
       return parent::_evaluate($viewFile, $dataForView);
     }
 
