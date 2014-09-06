@@ -27,12 +27,9 @@ class HamlView extends View {
 /**
  * Constructor
  */
-  public function __construct(Controller $controller = null) {
-    $this->Haml = new MtHaml\Environment('php', array('enable_escaper' => false));
-
-    $controller->ext = '.' . self::$extension;
-
-    return parent::__construct($controller);
+  public function __construct(Request $request = null, Response $response = null, EventManager $eventManager = null, array $viewOptions = []) {
+    $this->Haml = new Environment('php', array('enable_escaper' => false));
+    parent::__construct($request, $response, $eventManager, $viewOptions);
   }
 
 /**
