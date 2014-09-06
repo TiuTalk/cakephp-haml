@@ -17,7 +17,8 @@ class HamlView extends View {
 /**
  * View files extension
  */
-  public static $extension = 'haml';
+  protected  $_ext = '.haml';
+  private $__extensionName = 'haml';
 
 /**
  * Where the rendered CTP files will be stored
@@ -87,14 +88,12 @@ class HamlView extends View {
   protected function _evaluate($viewFile, $dataForView) {
     $file = new File($viewFile);
 
-    if ($file->ext() != self::$extension) {
+    if ($file->ext() != $this->__extension) {
       return parent::_evaluate($viewFile, $dataForView);
     }
 
     $file = $this->_createRenderedView($viewFile);
-
     $content = parent::_evaluate($file, $dataForView);
-
     $this->_deleteRenderedView($file);
 
     return $content;
