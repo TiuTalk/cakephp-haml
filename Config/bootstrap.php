@@ -1,2 +1,0 @@
-<?php
-MtHaml\Autoloader::register();
