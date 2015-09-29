@@ -1,5 +1,7 @@
 # CakePHP HAML views class
 
+[![Latest Stable Version](https://poser.pugx.org/tiutalk/haml/v/stable)](https://packagist.org/packages/tiutalk/haml) [![Total Downloads](https://poser.pugx.org/tiutalk/haml/downloads)](https://packagist.org/packages/tiutalk/haml) [![Latest Unstable Version](https://poser.pugx.org/tiutalk/haml/v/unstable)](https://packagist.org/packages/tiutalk/haml) [![License](https://poser.pugx.org/tiutalk/haml/license)](https://packagist.org/packages/tiutalk/haml)
+
 [HAML](http://haml.info/) template engine for **CakePHP 2.x**.
 
 Based on the [MtHaml](https://github.com/arnaud-lb/MtHaml), a HAML implementation for PHP.
