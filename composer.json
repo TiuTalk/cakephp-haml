@@ -13,5 +13,10 @@
     "require": {
         "composer/installers": "*",
         "mthaml/mthaml": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Haml\\": "src"
+        }
     }
 }
